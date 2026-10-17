@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header>
+      <nav class="navbar">
+        <a href="#home" class="logo">MyPortfolio</a>
+
+        <button
+          class="menu-btn"
+          id="menuBtn"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+        <h1>Hello, I'm <span>KOPPADI PRASAD VARMA</span></h1>
+        <h2>I'm a Web Developer</h2>
+        <p>
+          I create responsive websites using HTML, CSS, JavaScript and React.
+        </p>
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="profile-circle">PV</div>
+        <div>
+          <h3>Web Developer & Learner</h3>
+          <p>
+            I am passionate about web development and building user-friendly
+            websites. I enjoy learning new technologies and solving programming
+            problems.
+          </p>
+          <p>
+            My goal is to become a professional full-stack developer and build
+            useful web applications.
+          </p>
+          <a href="#contact" class="btn">Let's Connect</a>
+          <a href="" target="_blank" class="btn"> GitHub </a>
+          <a href="" target="_blank" class="btn">LinkedIn </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section skills-section">
+      <h2 class="section-title">My Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>HTML5</h3>
+          <p>Web page structure</p>
+        </div>
+        <div class="skill-card">
+          <h3>CSS3</h3>
+          <p>Styling and responsive design</p>
+        </div>
+        <div class="skill-card">
+          <h3>JavaScript</h3>
+          <p>Interactive websites</p>
+        </div>
+        <div class="skill-card">
+          <h3>React</h3>
+          <p>Reusable UI components</p>
+        </div>
+        <div class="skill-card">
+          <h3>Python</h3>
+          <p>Programming and backend basics</p>
+        </div>
+        <div class="skill-card">
+          <h3>MySQL</h3>
+          <p>Database fundamentals</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <h2 class="section-title">My Projects</h2>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-icon">🎓</div>
+          <h3>Student Management System</h3>
+          <p>
+            An application to register, search and manage student information.
+          </p>
+          <p class="tech">HTML · CSS · JavaScript · Python · MySQL</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon">🔐</div>
+          <h3>E-Commerce website</h3>
+          <p>A responsive authentication interface with form validation.</p>
+          <p class="tech">HTML · CSS · JavaScript</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon">💼</div>
+          <h3>Personal Portfolio</h3>
+          <p>A website to showcase my skills, projects and contact details.</p>
+          <p class="tech">HTML · CSS · JavaScript</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon"></div>
+          <h3>Library Management Systems</h3>
+          <p>A website to showcase my skills, projects and contact details.</p>
+          <p class="tech">HTML · CSS · JavaScript</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon"></div>
+          <h3>Job Portal Application</h3>
+          <p>A website to showcase my skills, projects and contact details.</p>
+          <p class="tech">HTML · CSS · JavaScript</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+      <h2 class="section-title">Contact Me</h2>
+      <p>Have a project or opportunity? Send me a message.</p>
+
+      <form id="contactForm" class="contact-form">
+        <input
+          type="text"
+          id="name"
+          placeholder="Your Name"
+          aria-label="Your Name"
+          required
+        />
+
+        <input
+          type="email"
+          id="email"
+          placeholder="Your Email"
+          aria-label="Your Email"
+          required
+        />
+
+        <textarea
+          id="message"
+          rows="5"
+          placeholder="Your Message"
+          aria-label="Your Message"
+          required
+        ></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+        <p id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© <span id="year"></span> Your Name | Personal Portfolio</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
